@@ -16,6 +16,10 @@ public class Lance {
 		return valor;
 	}
 
+	public Usuario getUsuario() {
+		return this.usuario;
+	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(usuario, valor);
