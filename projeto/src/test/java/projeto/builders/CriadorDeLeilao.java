@@ -1,5 +1,7 @@
 package projeto.builders;
 
+import java.util.Calendar;
+
 import projeto.models.Lance;
 import projeto.models.Leilao;
 import projeto.models.Usuario;
@@ -20,6 +22,11 @@ public class CriadorDeLeilao {
 
 	public Leilao constroi() {
 		return this.leilao;
+	}
+
+	public CriadorDeLeilao naData(Calendar data) {
+		this.leilao.setData(data);
+		return this;
 	}
 
 }
